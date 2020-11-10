@@ -7,8 +7,12 @@ const CreateTweet = (props) => {
     }
     const submitTweetHandler = (e) => {
         e.preventDefault()
-        props.setTweets([...props.tweets, { message: props.textInput, id: uuidv4() }])
-        props.setTextInput("")
+        if (props.textInput.trim()!=="") {
+            props.setTweets([...props.tweets, { id: uuidv4(), message: props.textInput, likes: 0 }])
+            props.setTextInput("")
+        } else {
+            alert("Fill the message box first.")
+        }
     }
 
     return (

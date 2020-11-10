@@ -1,6 +1,43 @@
+@font-face {
+    font-family: 'Harry Poter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Harry Poter'),
+         url('../fonts/HARRYP__.TTF') format('truetype');
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+h1.title{
+    font-family: 'Harry Poter';
+    text-align: center;
+}
+
 .tweetForm{
     textarea{
-        display: block;
+        width: calc(100% - 30px);
+        padding: 5px 5px;
+        border-radius: 5px;
         margin: 0.5rem;
     }
 }
@@ -28,7 +65,7 @@ h1{
 }
 
 .tweet {
-    background-color: lightblue;
+    background-color: whitesmoke;
     padding: 10px 10px;
     border-radius: 5px;
     margin: 0.5rem;
@@ -41,6 +78,20 @@ h1{
     h3{
         color: darkslateblue;
         margin: 10px 0;
+    }
+
+    div.likes{
+        display: inline-flex;
+        width: 100%;
+
+        .fa {
+            float: right;
+            margin-left: auto;
+            align-self: flex-end;
+            display: flex;
+            width: 30px;
+            justify-content: space-between;
+        }
     }
 
     *::first-letter {
