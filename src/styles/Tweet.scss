@@ -1,0 +1,49 @@
+.tweetForm{
+    textarea{
+        display: block;
+        margin: 0.5rem;
+    }
+}
+
+button{
+    cursor: pointer;
+    margin: .5rem;
+    padding: .2rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-transform: none;
+}
+
+h1{
+    margin: 10px;
+}
+
+.tweet {
+    background-color: lightblue;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 0.5rem;
+
+    h2{
+        color: red;
+        margin: 10px 0;
+    }
+
+    h3{
+        color: darkslateblue;
+        margin: 10px 0;
+    }
+
+    *::first-letter {
+        text-transform: uppercase;
+    }
+}
